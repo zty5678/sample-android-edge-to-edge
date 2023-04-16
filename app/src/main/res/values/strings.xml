@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">DemoEdgeToEdge</string>
+
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+
+
+    <string-array name="sample_sentence_list">
+        <item>The quick brown fox jumps over the lazy dog.</item>
+        <item>She sells seashells by the seashore.</item>
+        <item>The early bird catches the worm.</item>
+        <item>An apple a day keeps the doctor away.</item>
+        <item>To be or not to be, that is the question.</item>
+        <item>A penny saved is a penny earned.</item>
+        <item>Actions speak louder than words.</item>
+        <item>All\'s fair in love and war.</item>
+        <item>Beauty is in the eye of the beholder.</item>
+        <item>Better late than never.</item>
+        <item>Curiosity killed the cat.</item>
+        <item>Don\'t count your chickens before they hatch.</item>
+        <item>Every cloud has a silver lining.</item>
+        <item>Familiarity breeds contempt.</item>
+        <item>Good things come to those who wait.</item>
+        <item>Honesty is the best policy.</item>
+        <item>Laughter is the best medicine.</item>
+        <item>Misery loves company.</item>
+        <item>No pain, no gain.</item>
+        <item>Practice makes perfect.</item>
+    </string-array>
+
+    <string-array name="sample_joke_list">
+        <item>Why don\'t scientists trust atoms? Because they make up everything.</item>
+        <item>Why don\'t skeletons fight each other? They don\'t have the guts.</item>
+        <item>Why did the tomato turn red? Because it saw the salad dressing.</item>
+        <item>Why was the math book sad? Because it had too many problems.</item>
+        <item>Why did the scarecrow win an award? Because he was outstanding in his field.</item>
+        <item>Why don\'t oysters give to charity? Because they\'re shellfish.</item>
+        <item>Why couldn\'t the bicycle stand up by itself? Because it was two-tired.</item>
+        <item>Why did the coffee file a police report? It got mugged.</item>
+        <item>What do you call fake spaghetti? An impasta.</item>
+        <item>Why did the chicken cross the playground? To get to the other slide.</item>
+        <item>Why did the tomato turn green? Because it saw the salad dressing\'s bottle.</item>
+        <item>Why did the cookie go to the doctor? Because it was feeling crumbly.</item>
+        <item>Why did the belt go to jail? For holding up the pants.</item>
+        <item>Why did the banana go to the doctor? Because it wasn\'t peeling well.</item>
+        <item>Why did the crab never share? Because he was shellfish.</item>
+        <item>Why did the man put his money in the freezer? He wanted cold hard cash.</item>
+        <item>Why don\'t ants get sick? Because they have tiny ant-bodies.</item>
+        <item>Why did the tomato turn red? Because it saw the salad dressing.</item>
+        <item>Why don\'t scientists trust atoms? Because they make up everything.</item>
+        <item>Why did the pencil break? Because it was pointless.</item>
+    </string-array>
+
+
+</resources>

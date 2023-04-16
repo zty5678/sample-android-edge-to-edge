@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DemoEdgeToEdge" parent="Theme.Material3.DayNight">
+
+    </style>
+
+
+    <style name="Theme.DemoEdgeToEdge" parent="Base.Theme.DemoEdgeToEdge" />
+
+    <style name="Theme.DemoEdgeToEdge.NoActionBar" parent="Base.Theme.DemoEdgeToEdge">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.DemoEdgeToEdge.Toolbar" parent="@style/Widget.Material3.Toolbar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+
+        <item name="android:background">?attr/colorSurface</item>
+
+    </style>
+</resources>
