@@ -1,4 +1,4 @@
-# sample-android-edge-to-edge
+# An Android demo app about how to Display content edge-to-edge.
 
 ## Gesture navigation mode
 
