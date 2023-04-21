@@ -5,21 +5,26 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
+import android.widget.AdapterView.OnItemClickListener
 import androidx.core.graphics.Insets
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.google.android.material.divider.MaterialDividerItemDecoration
 import com.grzegorzojdana.spacingitemdecoration.Spacing
 import com.grzegorzojdana.spacingitemdecoration.SpacingItemDecoration
+import io.zty5678.demo.edgetoedge.DetailActivity
 import io.zty5678.demo.edgetoedge.MyViewModelFactory
 import io.zty5678.demo.edgetoedge.PageViewModel
 import io.zty5678.demo.edgetoedge.data.OfflineItemsRepository
 import io.zty5678.demo.edgetoedge.data.SentenceCategory
+import io.zty5678.demo.edgetoedge.data.SentenceItem
 import io.zty5678.demo.edgetoedge.databinding.FragmentPlaceholderListBinding
 import io.zty5678.demo.edgetoedge.utils.LogUtils
+import io.zty5678.demo.edgetoedge.utils.doOnApplyWindowInsets
 
 
 class PlaceholderListFragment : Fragment() {
@@ -53,21 +58,18 @@ class PlaceholderListFragment : Fragment() {
         _binding = FragmentPlaceholderListBinding.inflate(inflater, container, false)
         val root = binding.root
 
-        ViewCompat.setOnApplyWindowInsetsListener(
-            binding.root
+        binding.recyclerview.clipToPadding = false
+        binding.recyclerview.doOnApplyWindowInsets { view, insets, initialPadding ->
+            view.updatePadding(bottom = initialPadding.bottom + insets.bottom)
 
-        ) { v: View?, insetsCompat: WindowInsetsCompat ->
-
-            val insets: Insets = insetsCompat.getInsets(WindowInsetsCompat.Type.systemBars())
-
-            binding.recyclerview.setPadding(0, 0, 0, insets.bottom)
-            binding.recyclerview.clipToPadding = false
-
-
-            insetsCompat
         }
 
+        adapter.setOnItemClickListener(object : HomeListAdapter.OnItemClickListener<SentenceItem> {
+            override fun onItemClicked(v: View?, data: SentenceItem, position: Int) {
+                DetailActivity.start(context, data)
+            }
 
+        })
         binding.recyclerview.adapter = adapter
 
         var categoryStr: String? = arguments?.getString(ARG_CATEGORY);

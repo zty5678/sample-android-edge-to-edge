@@ -13,12 +13,7 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             style="@style/Theme.DemoEdgeToEdge.Toolbar"
-
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:layout_scrollFlags="scroll|enterAlways">
-
-        </androidx.appcompat.widget.Toolbar>
+            app:layout_scrollFlags="scroll|enterAlways" />
 
 
         <com.google.android.material.tabs.TabLayout
