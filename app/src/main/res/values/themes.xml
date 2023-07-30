@@ -10,6 +10,10 @@
     <style name="Theme.DemoEdgeToEdge.NoActionBar" parent="Base.Theme.DemoEdgeToEdge">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+
+
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+
     </style>
 
     <style name="Theme.DemoEdgeToEdge.Toolbar" parent="@style/Widget.Material3.Toolbar">
